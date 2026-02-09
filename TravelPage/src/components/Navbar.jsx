@@ -7,10 +7,10 @@ const Navbar = () => {
     alert("button clicked")
   };
   return (
-    <nav className='bg-transparent text-black'>
-        <div className=' flex justify-between max-w-6xl mx-auto px-6  pr-8 pl-8'>
-            <div className='flex justify-between items-center py-6 h-14'>
-                <img src={logo} alt="logo" className='h-8'/>
+   <nav className="relative z-10">
+        <div className=' flex justify-between max-w-[7.5xl] mx-auto px-1 pr-22 '>
+            <div className='flex justify-between items-center  h-14'>
+                <img src={logo} alt="logo" className='h-8 pl-26 '/>
             </div>
             <div className='flex justify-between items-center text-black gap-18'>
               <a href='#destination'>Destination</a>

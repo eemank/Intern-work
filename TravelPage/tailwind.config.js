@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",  // <-- include all React files
   ],
   theme: {
-    extend: {},
+    extend: {
+      rotate:{
+        '-2' : '-2deg',
+      }
+    },
   },
   plugins: [],
 }
