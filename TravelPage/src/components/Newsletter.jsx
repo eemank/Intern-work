@@ -2,7 +2,7 @@ import { PiPaperPlaneTiltFill } from "react-icons/pi";
 
 export default function Newsletter() {
   return (
-    <section className="w-full flex justify-center px-4 py-20 bg-white">
+    <section className="w-full flex justify-center px-4 py-20 mt-0 bg-white">
       <div className="relative w-full max-w-6xl px-6 md:px-16">
         
         <div className="relative overflow-hidden rounded-tl-[128px] bg-[#F7F6FB] py-16">
