@@ -5,9 +5,9 @@ import { IoMdPlay } from "react-icons/io";
 
 const Herosec = () => {
   return (
-    <div className='flex justify-between pb-46 items-center'>
+    <div className='flex justify-between pb-40 items-center'>
       <img src={bgimg} alt='blob'
-       className="absolute top-0 right-0 scale-70 origin-top-right"
+       className="absolute top-0 right-0 scale-65  origin-top-right"
      />
      <div className=' relative z-10 mt-16 pl-26 max-w-xl space-y-3'>
        <p className='text-sm uppercase tracking-widest text-orange-400 font-bold'>Best Destinations Around the World</p>
