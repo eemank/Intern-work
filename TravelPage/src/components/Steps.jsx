@@ -7,7 +7,8 @@ import { BsBoundingBox } from "react-icons/bs";
 export default function Steps() {
   return (
     <section className="w-full  py-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
         
         
         <div>
@@ -55,7 +56,7 @@ export default function Steps() {
         </div>
 
         
-        <div className="relative flex justify-center">
+        <div className="relative flex flex-col items-center lg:flex lg:flex-row lg:justify-center">
           <div className="bg-white rounded-3xl shadow-xl p-5 w-80">
             <img
               src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
@@ -87,7 +88,11 @@ export default function Steps() {
           </div>
 
           
-          <div className="absolute right-18 bottom-12 bg-white rounded-2xl shadow-lg p-4 w-52">
+          <div className="relative lg:absolute 
+            lg:right-18 lg:bottom-12 
+             mt-6 lg:mt-0 
+            bg-white rounded-2xl shadow-lg 
+              p-4 w-full max-w-xs lg:w-52">
             <p className="text-xs font-sans text-gray-400">Ongoing</p>
             <h4 className="font-semibold text-sm mt-1">
               Trip to rome

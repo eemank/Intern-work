@@ -10,7 +10,7 @@ import Services from '../components/Services'
 
 const Home = () => {
   return (
-    <div className='ml-12 mr-12'>
+    <div className='w-full'>
       <Navbar/>
       <Herosec/>
       <Services/>

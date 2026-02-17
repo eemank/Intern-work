@@ -9,21 +9,21 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-white  pl-5 ">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
-
+    <footer className="bg-white px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 text-center sm:text-left">
           
-          <div>
-            <Link to="/" className="text-3xl pl-0 font-bold text-slate-900">
+          {/* Logo Section */}
+          <div className="sm:col-span-2 lg:col-span-1">
+            <Link to="/" className="text-3xl font-bold text-slate-900">
               Jadoo.
             </Link>
-            <p className="mt-4 text-xs text-slate-500 max-w-xs">
+            <p className="mt-4 text-xs text-slate-500 max-w-xs mx-auto sm:mx-0">
               Book your trip in minute, get full Control for much longer.
             </p>
           </div>
 
-          
+          {/* Company */}
           <div>
             <h3 className="font-bold text-slate-900 mb-4">Company</h3>
             <ul className="space-y-2 text-gray-500">
@@ -33,7 +33,7 @@ export default function Footer() {
             </ul>
           </div>
 
-    
+          {/* Contact */}
           <div>
             <h3 className="font-bold text-slate-900 mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-500">
@@ -43,7 +43,7 @@ export default function Footer() {
             </ul>
           </div>
 
-    
+          {/* More */}
           <div>
             <h3 className="font-extrabold text-slate-900 mb-4">More</h3>
             <ul className="space-y-2 text-gray-500">
@@ -53,61 +53,61 @@ export default function Footer() {
             </ul>
           </div>
 
-          
-          <div className="flex flex-col items-start md:items-start">
-
-            <div className="flex md:justify-end items-start gap-4 mb-6">
-              <a href="#" className="social-icon py-2 px-2 border rounded-full border-gray-100 shadow">
-                <FaFacebookF className="" />
+          {/* Social + Apps */}
+          <div className="flex flex-col items-center sm:items-start">
+            
+            <div className="flex gap-4 mb-6 justify-center sm:justify-start">
+              <a href="#" className="social-icon p-2 border rounded-full border-gray-100 shadow">
+                <FaFacebookF />
               </a>
-              <a href="#" className="social-icon py-2 px-2 border rounded-full border-gray-100 shadow bg-linear-to-r from-pink-300 via-purple-400 to-yellow-300">
-                <FaInstagram className="" />
+              <a href="#" className="social-icon p-2 border rounded-full border-gray-100 shadow bg-linear-to-r from-pink-300 via-purple-400 to-yellow-300">
+                <FaInstagram />
               </a>
-              <a href="#" className="social-icon py-2 px-2 border rounded-full border-gray-100 shadow">
+              <a href="#" className="social-icon p-2 border rounded-full border-gray-100 shadow">
                 <FaTwitter />
               </a>
             </div>
 
             <p className="text-slate-500 text-sm mb-4">Discover our app</p>
 
-            <div className="flex md:justify-end gap-3 text-xs">
-             <a
-               href="#"
-               className="flex items-center gap-3 px-4 py-0 bg-black text-white border border-black rounded-full"
+            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+              <a
+                href="#"
+                className="flex items-center justify-center gap-3 px-4 py-2 bg-black text-white border border-black rounded-full w-full sm:w-auto"
               >
-              <FaGooglePlay className="text-2xl shrink-0" />
-              <span className="flex flex-col items-start leading-tight whitespace-nowrap">
-               <span className="text-[10px] font-semibold uppercase tracking-wide leading-none ">
-                Get it on
-               </span>
-               <span className="text-xs  uppercase leading-none">
-                Google Play
-               </span>
-             </span>
-            </a>
-            <a
-             href="#"
-             className="flex items-center gap-3 px-4 py-2 bg-black text-white border border-black rounded-full"
-             >
-            <FaApple className="text-2xl shrink-0" />
-            <span className="flex flex-col items-start leading-tight whitespace-nowrap">
-              <span className="text-[10px] leading-none tracking-wide">
-              Available on
-              </span>
-      
-              <span className="text-xs leading-none font-semibold">
-              App Store
-              </span>
-            </span>
-           </a>
-         </div>
-       </div>
-    </div>
+                <FaGooglePlay className="text-xl shrink-0" />
+                <span className="flex flex-col leading-tight whitespace-nowrap">
+                  <span className="text-[10px] font-semibold uppercase tracking-wide">
+                    Get it on
+                  </span>
+                  <span className="text-xs uppercase">
+                    Google Play
+                  </span>
+                </span>
+              </a>
 
-      <p className="text-center text-gray-600 text-sm mt-10">
-          All rights reserved@jadoo.co
-      </p>
-  </div>
+              <a
+                href="#"
+                className="flex items-center justify-center gap-3 px-4 py-2 bg-black text-white border border-black rounded-full w-full sm:w-auto"
+              >
+                <FaApple className="text-xl shrink-0" />
+                <span className="flex flex-col leading-tight whitespace-nowrap">
+                  <span className="text-[10px] tracking-wide">
+                    Available on
+                  </span>
+                  <span className="text-xs font-semibold">
+                    App Store
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p className="text-center text-gray-600 text-sm mt-10">
+          All rights reserved @jadoo.co
+        </p>
+      </div>
     </footer>
   );
 }
